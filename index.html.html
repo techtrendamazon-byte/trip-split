@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="si"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trip Split · ට්‍රිප් බෙදුම</title>
+<meta name="theme-color" content="#0b2540"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Trip Split"><meta name="apple-mobile-web-app-status-bar-style" content="default"><link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAEKklEQVR4nO3cTW4TMRjGcTvKrjPDKeAQfAlEQQIEbNod7Qq1zSE4B6zZdtMgQT9AQuLjEhyjkwOwyIJA+7RpFft97fn/lGUkO2P36RPPtHHt5oMAnGdkPQH4xeaANA7RegrwiuSANA6R6MD5SA5IdA5IJAckkgPSOLA7IJAckOgckEgOSCQHJE5IIZEckOgckEgOSHQOSCQHJDoHJJIDEskBibuykEgOSHQOSCQHJJIDEiekkEgOSGwOSBRSSCQHJAopJJIDEp0DEskBic4BieSAROeARHJAIjkg8ZggpMqTY/brc+ohmjvPUg9hJa7dfmo9hyQybItFVW6RUYihvlfmnRHme9H6U6/8VeG3ldnP3DvDdtx04trdqvJw9uOT7QSae89tJ7BCFSYHVqWqzmEeG2EeXdbXYVWvsfXFTK65nzDnZ9/tt2M6lZ9zhBAMPmAtl3QIJ6TsjmsiOaoYMQ2+rUAiOaoYMQ06Rx0jJkFyVDFiGnQOSOPqHz7P/wGruaQkByQKaR0jJkEhrWLENGLz6IX1HP7Xf/1oPQUb7fpL6yn8IzbrXjZH/2Wge+Ks9rGLXeKlkLIzFjm5GrGx3qT9ydR2Ap61T14Zjm6cHOyMi9leH8vHBNkZy+hPplYL5KVzwCGz5OiPiY1l9cc24TEy2Rr9ETvjavqjaf5lGsAJaTWyrxSdA5JB5+gPD6w/dZH6w4PMKzWEu7I1ybpYdI6i5F0sOgckkqMoJAec4N9bFyXvYpEckOgcRaFzwAmSoyh5F2voJ6TNrYcXv2H2+1uemSyHE9IsLt0Wi2/zskXoHHDC4kkwB5aMjWu/PxXuykLjEAw+GBTSG293cw+5Ci6mTSGFE8P9KlskDsGgcQgGhc4BJ0iOouRdrNhsbGQdMIR+fz/ziGdd48TTw+2VdnMz53A8JlgUHhOEEwO98XbV3xEefqeEkHulSA5Iw/22Mg+Dwp4E44Q0J19rfzlOSKFwQgonSI6i0Dmg0Tmg0DngBMlRFJIDTnBXtijclYUTdI6i0DngBMlRFE5IoeU9IeXLSkEyLxadAxKbAxKFtCgUUmjcsodCIYUTJEdR6BzQ6BxQqu8c3ZvX+QetQP7rRnKUI/tK8W0F0ijEmP/V7WxZf/DCdDtb+ZfJLDnYH8uzulZ0jhIYrZFl5+h2CY/LGV4li3/7tPDq9tgfF+n2tgxXJ7Y+fnxP33+wnoIv3d629RSsk+NvhEzsr4Uf3WTbfEVCDLH1F+yn7waaIt5+QmI7cbc54AQnpJD4Q2pIJAckTkghkRyQ6ByQSA5IdA5IJAckNgckCikkkgMShRQSyQGJ5IDEH1JDIjkg0TkgkRyQSA5InJBCIjkg0TkgkRyQ6ByQSA5IdA5IJAckkgMSd2UhkRyQ6ByQSA5IJAckTkghkRyQ6ByQSA5IfwBbMHmpifT4jQAAAABJRU5ErkJggg==">
+<style>
+:root{--bg:#eef1f5;--card:#fff;--tx:#0f1b2d;--mut:#66758a;--ac:#0e7c66;--ac2:#14a583;--hd1:#0b2540;--hd2:#14486b;--bd:#e1e6ed;--bad:#c2412d;--badbg:#fbe9e6;--okbg:#e2f5ef;--sh:0 2px 10px rgba(11,37,64,.07);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1218;--card:#151f2a;--tx:#e8eef5;--mut:#8b9bb0;--ac:#2fc29c;--ac2:#1d9a7d;--hd1:#08172a;--hd2:#0f3450;--bd:#243242;--bad:#f08a78;--badbg:#3a1f1b;--okbg:#14352c;--sh:none;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0c1218;--card:#151f2a;--tx:#e8eef5;--mut:#8b9bb0;--ac:#2fc29c;--ac2:#1d9a7d;--hd1:#08172a;--hd2:#0f3450;--bd:#243242;--bad:#f08a78;--badbg:#3a1f1b;--okbg:#14352c;--sh:none;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,-apple-system,"Noto Sans Sinhala","Iskoola Pota",sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hd1);z-index:30}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:linear-gradient(135deg,var(--hd1),var(--hd2));color:#fff;padding:14px 16px}
+.hw{max-width:680px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:10px}
+header h1{font-size:18px;margin:0;line-height:1.25}header .sub{font-size:12px;opacity:.75}
+.chip{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;border-radius:20px;padding:6px 12px;font-size:13px;cursor:pointer;white-space:nowrap}
+main{max-width:680px;margin:0 auto;padding:14px 14px 100px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{background:var(--card);border-radius:14px;padding:13px;box-shadow:var(--sh);border:1px solid var(--bd)}
+.tile.hero{grid-column:1/3;background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;border:0}
+.tile .l{font-size:12px;opacity:.75}.tile .v{font-size:21px;font-weight:700;margin-top:2px}
+.card{background:var(--card);border-radius:14px;padding:14px;margin:12px 0;box-shadow:var(--sh);border:1px solid var(--bd)}
+.card h2{font-size:15px;margin:0 0 10px;display:flex;justify-content:space-between;align-items:center}
+.mut{color:var(--mut);font-size:13px}
+.kv{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--bd);gap:10px}.kv:last-child{border:0}
+.bar{height:8px;background:var(--bd);border-radius:6px;overflow:hidden;margin:8px 0 4px}.bar i{display:block;height:100%;background:var(--ac)}
+.row{display:flex;align-items:center;gap:11px;padding:10px 0;border-bottom:1px solid var(--bd)}.row:last-child{border:0}
+.ic{width:40px;height:40px;border-radius:12px;background:var(--okbg);display:grid;place-items:center;font-size:19px;flex:none}
+.gr{flex:1;min-width:0}.gr b{display:block;overflow-wrap:anywhere}
+.am{text-align:right;font-weight:700;white-space:nowrap}
+.pill{border-radius:20px;padding:2px 10px;font-size:13px;font-weight:600;white-space:nowrap}
+.pos{background:var(--okbg);color:var(--ac)}.neg{background:var(--badbg);color:var(--bad)}
+.av{width:36px;height:36px;border-radius:50%;background:var(--hd2);color:#fff;display:grid;place-items:center;font-weight:700;flex:none}
+.pay{border:1.5px dashed var(--bd);border-radius:12px;padding:12px;margin:8px 0;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.pay b.n{color:var(--ac);font-size:17px}
+button,input,select{font:inherit;color:var(--tx)}
+button{cursor:pointer}
+.btn{background:var(--ac);color:#fff;border:0;border-radius:10px;padding:11px 16px;font-weight:600}
+.btn.g{background:transparent;color:var(--tx);border:1px solid var(--bd)}
+.btn.w{width:100%}
+.s{background:transparent;border:0;font-size:16px;padding:2px 5px}
+input,select{width:100%;background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin:3px 0 10px}
+label.l{font-size:12px;color:var(--mut);font-weight:600}
+.chk{display:inline-flex;gap:6px;align-items:center;background:var(--bg);border:1px solid var(--bd);border-radius:20px;padding:5px 11px;margin:3px 6px 3px 0;font-size:14px}.chk input{width:auto;margin:0}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--bd);display:flex;justify-content:center;z-index:20;padding-bottom:env(safe-area-inset-bottom,0px)}
+nav .in{display:flex;width:100%;max-width:680px}
+nav button{flex:1;background:none;border:0;padding:9px 0 8px;color:var(--mut);font-size:12px}
+nav button span{display:block;font-size:20px}nav button.on{color:var(--ac);font-weight:700}
+.fab{position:fixed;right:18px;bottom:calc(74px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:50%;background:var(--ac);color:#fff;border:0;font-size:30px;box-shadow:0 6px 18px rgba(0,0,0,.28);z-index:25;line-height:1}
+.mb{position:fixed;inset:0;background:rgba(5,15,28,.55);z-index:40;display:flex;align-items:flex-end;justify-content:center}
+.sheet{background:var(--card);width:100%;max-width:680px;max-height:92%;overflow:auto;border-radius:20px 20px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom,0px))}
+.sheet h3{margin:0 0 12px;font-size:17px}
+#toast{position:fixed;left:50%;top:calc(70px + env(safe-area-inset-top,0px));transform:translateX(-50%);background:#111c2b;color:#fff;border-radius:10px;padding:9px 16px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:60;max-width:90%}
+#toast.on{opacity:1}
+.empty{text-align:center;color:var(--mut);padding:22px 0}
+a.wa{display:block;text-align:center;text-decoration:none;margin-top:10px}
+
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tl{background:var(--card);border:1px solid var(--bd);border-radius:20px;box-shadow:var(--sh);padding:16px 4px 12px;text-align:center;color:var(--tx);font-weight:700;font-size:14px;line-height:1.3;transition:transform .1s}
+.tl .e{display:grid;place-items:center;width:54px;height:54px;margin:0 auto 8px;border-radius:16px;background:linear-gradient(135deg,var(--okbg),var(--bg));font-size:28px}
+.tl:active{transform:scale(.95)}
+.seg{display:flex;gap:8px;margin:4px 0 12px}.seg button{flex:1;background:var(--bg);border:2px solid var(--bd);border-radius:10px;padding:10px 6px;font-weight:600}.seg button small{display:block;font-weight:400;font-size:12px;color:var(--mut)}.seg button.on{border-color:var(--ac);background:var(--okbg);color:var(--ac)}
+.tl small{display:block;font-weight:500;font-size:11px;color:var(--mut)}
+nav button small{display:block;font-size:10px;font-weight:400;opacity:.8}
+header{border-radius:0 0 24px 24px;padding:18px 16px 22px;box-shadow:0 8px 22px rgba(11,37,64,.28)}
+header h1{font-size:20px}
+main{padding-top:18px}
+.tile,.card{border-radius:20px}
+.tile.hero{padding:18px;box-shadow:0 8px 20px rgba(14,124,102,.3)}
+.tile .v{font-size:22px}
+.btn{border-radius:14px;padding:13px 16px}
+nav{border-radius:22px 22px 0 0;box-shadow:0 -4px 16px rgba(11,37,64,.1)}
+.fab{box-shadow:0 8px 22px rgba(14,124,102,.45)}
+.brand{text-align:center;margin:0 0 14px;padding:14px;border-radius:20px;background:linear-gradient(135deg,#0b2540,#0e7c66);color:#fff;box-shadow:0 6px 16px rgba(11,37,64,.25)}.brand b{display:block;font-size:26px;letter-spacing:.5px;margin:2px 0}.brand small{display:block;opacity:.85;font-size:12px}
+body.en nav small,body.en .tl small,body.en .seg small{display:none}.dz{border:1px solid #d9534f55}
+</style></head>
+<body><div id="app"></div>
+<script>
+const KEY='trip_hisaba_v1';let LANG='si';try{LANG=localStorage.getItem('trip_lang')||'si'}catch(e){}const BASE='';
+let S={pw:'',trip:{name:'',dates:''},hire:0,members:[],exp:[]},VIEW=false;
+try{const r=localStorage.getItem(KEY);if(r)S=JSON.parse(r)}catch(e){}
+S.veh=S.veh||{owner:'',km:0,rate:0};S.mode=S.mode||(S.hire>0?'hire':'own');
+S.done=S.done||{};S.fund=S.fund||{t:'',c:{}};S.w=S.w||{};const FUND='පොදු අරමුදල';const TODAY=()=>new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);
+const CATS=['කෑම බීම','ඉන්ධන','කුලිය - අත්තිකාරම','කුලිය - ඉතිරිය','රියදුරු කෑම','නවාතැන්','ටිකට්','අධිවේගී / පාකිං','වෙනත්'];
+const ICON={'කෑම බීම':'🍽️','ඉන්ධන':'⛽','කුලිය - අත්තිකාරම':'💵','කුලිය - ඉතිරිය':'🚐','රියදුරු කෑම':'🥘','නවාතැන්':'🏨','ටිකට්':'🎟️','අධිවේගී / පාකිං':'🛣️','වෙනත්':'🧾','වාහන කිමී ගාණ':'🚗'};
+const ss=(k,v)=>{try{if(v===undefined)return sessionStorage.getItem(k)||'';sessionStorage.setItem(k,v)}catch(e){return ''}};
+let admin=ss('adm')==='1',tab=ss('tab')||'home',modal=null,F={};
+const SKEY='trip_sync_v1';
+let SY=null,es=null;try{SY=JSON.parse(localStorage.getItem(SKEY)||'null')}catch(e){}
+const fb=p=>SY.u.replace(/\/$/,'')+'/trips/'+SY.i+p+'.json';
+const norm=o=>{o.members=o.members||[];o.exp=(o.exp||[]).map(e=>({...e,sp:e.sp||[]}));o.trip=o.trip||{name:'',dates:''};o.veh=o.veh||{owner:'',km:0,rate:0};o.hire=o.hire||0;o.mode=o.mode||(o.hire>0?'hire':'own');o.done=o.done||{};o.fund=o.fund||{t:'',c:{}};o.fund.c=o.fund.c||{};o.w=o.w||{};o.lock=!!o.lock;return o};
+const strip=o=>{const c={...o};delete c.pw;return c};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=n=>'රු. '+Math.round(n).toLocaleString('en-US');
+const g=id=>document.getElementById(id);
+const toast=m=>{const t=g('toast');if(!t)return;t.textContent=m;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),2600)};
+async function H(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+async function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){toast('සුරැකීම අසාර්ථකයි');return false}
+  if(SY&&SY.k&&!VIEW){try{const r=await fetch(fb(''),{method:'PATCH',body:JSON.stringify({data:JSON.stringify(strip(S)),k:SY.k})});if(!r.ok)toast('Sync අසාර්ථකයි (අවසර නැත)')}catch(e){toast('Offline: මේ ෆෝන් එකේ සුරැකුවා. Online වුණාම sync වෙනවා')}}
+  modal=null;F={};render();return true}
+function startSync(){if(!SY)return;if(es)es.close();
+  const apply=v=>{if(typeof v!=='string'||JSON.stringify(strip(S))===v)return;try{const o=norm(JSON.parse(v)),pw=S.pw;S=o;S.pw=pw;try{if(!VIEW)localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}if(!modal)render()}catch(e){}};
+  es=new EventSource(fb('/data'));
+  es.addEventListener('put',ev=>{try{const m=JSON.parse(ev.data);if(m.path==='/')apply(m.data)}catch(e){}})}
+async function connectSync(){
+  const u=g('su').value.trim().replace(/\/$/,''),p=g('spw').value;let id=g('si').value.trim();
+  if(!/^https:\/\/.+/.test(u)||p.length<4){toast('Database URL සහ මුරපදය (අක්ෂර 4+) දාන්න');return}
+  if(!id)id=Array.from(crypto.getRandomValues(new Uint8Array(8)),b=>'abcdefghjkmnpqrstuvwxyz23456789'[b%31]).join('');
+  const k=await H(p+':'+id),old=SY;SY={u,i:id};
+  try{const r=await fetch(fb('/data'));if(!r.ok)throw 1;const v=await r.json();
+    if(v===null){const w=await fetch(fb(''),{method:'PATCH',body:JSON.stringify({data:JSON.stringify(strip(S)),k})});if(!w.ok)throw 1}
+    else{const w=await fetch(fb(''),{method:'PATCH',body:JSON.stringify({k})});if(!w.ok){SY=old;toast('මුරපදය වැරදියි');return}const pw=S.pw;S=norm(JSON.parse(v));S.pw=pw}
+  }catch(e){SY=old;toast('සම්බන්ධ වෙන්න බැහැ. URL සහ Rules බලන්න');return}
+  SY.k=k;try{localStorage.setItem(SKEY,JSON.stringify(SY))}catch(e){}admin=true;ss('adm','1');startSync();await save();toast('Live Sync සම්බන්ධයි ✅')}
+addEventListener('online',()=>{if(SY&&SY.k&&!VIEW)save()});
+const vehCost=()=>S.mode==='own'?(S.veh.km||0)*(S.veh.rate||0):0;
+const allExp=()=>{const c=vehCost();return c>0&&S.members.includes(S.veh.owner)?[...S.exp,{auto:1,cat:'වාහන කිමී ගාණ',desc:S.veh.km+' කිමී × රු. '+S.veh.rate,amt:c,by:S.veh.owner,sp:[...S.members]}]:S.exp};
+const sum=c=>S.exp.filter(e=>e.cat===c).reduce((a,e)=>a+e.amt,0);
+function calc(){
+  const W=m=>S.w[m]===undefined?1:S.w[m];const paid={},owed={};S.members.forEach(m=>{paid[m]=0;owed[m]=0});
+  allExp().forEach(e=>{if(e.by in paid)paid[e.by]+=e.amt;const sp=e.sp.filter(x=>x in owed),tw=sp.reduce((a,m)=>a+W(m),0);if(tw>0)sp.forEach(m=>owed[m]+=e.amt*W(m)/tw)});
+  const fc=S.fund.c||{};let tc=0;S.members.forEach(m=>{const v=+fc[m]||0;paid[m]+=v;tc+=v});const fe=S.exp.filter(e=>e.by===FUND).reduce((a,e)=>a+e.amt,0);if(S.fund.t in paid)paid[S.fund.t]-=tc-fe;
+  const cr=[],db=[],bal={};
+  const raw=S.members.map(m=>paid[m]-owed[m]),r=raw.map(Math.round);let df=r.reduce((a,b)=>a+b,0);const od=raw.map((v,i)=>[i,v-r[i]]).sort((a,b)=>df>0?a[1]-b[1]:b[1]-a[1]);
+  for(let k=0;df!==0&&k<od.length*5;k++){const i=od[k%od.length][0];r[i]+=df>0?-1:1;df+=df>0?-1:1}
+  S.members.forEach((m,i)=>{const v=r[i];bal[m]=v;if(v>0)cr.push([m,v]);else if(v<0)db.push([m,-v])});
+  cr.sort((a,b)=>b[1]-a[1]);db.sort((a,b)=>b[1]-a[1]);
+  const pay=[];let i=0,j=0;
+  while(i<db.length&&j<cr.length){const x=Math.min(db[i][1],cr[j][1]);pay.push([db[i][0],cr[j][0],x]);db[i][1]-=x;cr[j][1]-=x;if(!db[i][1])i++;if(!cr[j][1])j++}
+  return{paid,owed,bal,pay}
+}
+async function doLogin(){
+  const p=g('pw').value;if(p.length<4){toast('අඩුම තරමින් අක්ෂර 4ක් දාන්න');return}
+  if(SY){const k=await H(p+':'+SY.i);try{const r=await fetch(fb(''),{method:'PATCH',body:JSON.stringify({k})});if(!r.ok){toast('මුරපදය වැරදියි');return}}catch(e){toast('Network ප්‍රශ්නයක්');return}SY.k=k;try{localStorage.setItem(SKEY,JSON.stringify(SY))}catch(e){}admin=true;ss('adm','1');modal=null;render();toast('Admin ලෙස ඇතුල් වුණා');return}
+  const h=await H(p);
+  if(!S.pw){S.pw=h;admin=true;ss('adm','1');modal=null;if(!(await save())){render()}}
+  else if(h===S.pw){admin=true;ss('adm','1');modal=null;render();toast('Admin ලෙස ඇතුල් වුණා')}
+  else toast('මුරපදය වැරදියි')
+}
+function addExp(){
+  const amt=parseFloat(g('fa').value),sp=[...document.querySelectorAll('.spc:checked')].map(x=>x.value);
+  if(!amt||amt<=0||!g('fb').value||!sp.length){toast('මුදල, ගෙවූ කෙනා සහ බෙදෙන අය පුරවන්න');return}
+  const e={id:F.id||Date.now(),cat:g('fc').value,desc:g('fd').value.trim(),amt,by:g('fb').value,sp,dt:g('fdt').value,ph:F.ph||''};
+  if(!F.id&&S.exp.some(x=>x.amt===e.amt&&x.cat===e.cat&&x.dt===e.dt&&x.by===e.by)&&!confirm('මේ වියදම දෙපාරක්ද? එකම ගාණ, කාණ්ඩය, දිනය, ගෙවූ කෙනා දැනටමත් තියෙනවා. එකතු කරන්නද?'))return;
+  const i=S.exp.findIndex(x=>x.id===e.id);if(i>=0)S.exp[i]=e;else S.exp.push(e);save()
+}
+function readCfg(){const v=(id,d)=>g(id)?g(id).value:d;S.trip.name=v('tn',S.trip.name).trim();S.trip.dates=v('td',S.trip.dates).trim();if(g('hh'))S.hire=parseFloat(g('hh').value)||0;if(g('vo'))S.veh={owner:g('vo').value,km:parseFloat(g('vk').value)||0,rate:parseFloat(g('vr').value)||0}}
+function setCfg(){readCfg();save().then(()=>toast('සුරැකුවා'))}
+function addMember(){const n=g('nm').value.trim();if(!n)return;if(S.members.includes(n)){toast('මේ නම කලින්ම තියෙනවා');return}S.members.push(n);save()}
+function delMember(m){if(S.exp.some(e=>e.by===m||e.sp.includes(m))){toast('මේ කෙනාගේ වියදම් තියෙනවා. මුලින් ඒවා මකන්න');return}S.members=S.members.filter(x=>x!==m);save()}
+const b64=u=>btoa(String.fromCharCode(...u)).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+const unb64=s=>Uint8Array.from(atob(s.replace(/-/g,'+').replace(/_/g,'/')),c=>c.charCodeAt(0));
+async function enc(o){let b=new TextEncoder().encode(JSON.stringify(o)),z='p';if(window.CompressionStream){b=new Uint8Array(await new Response(new Blob([b]).stream().pipeThrough(new CompressionStream('gzip'))).arrayBuffer());z='z'}return z+b64(b)}
+async function dec(s){let b=unb64(s.slice(1));if(s[0]==='z')b=new Uint8Array(await new Response(new Blob([b]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer());return JSON.parse(new TextDecoder().decode(b))}
+async function share(){if(SY){const u=(BASE||location.href.split('#')[0])+'#s='+b64(new TextEncoder().encode(JSON.stringify({u:SY.u,i:SY.i})));modal={t:'share',u,live:1};render();return}
+const o=JSON.parse(JSON.stringify(S));delete o.pw;const u=(BASE||location.href.split('#')[0])+'#v'+await enc(o);modal={t:'share',u};render()}
+function copyLink(){const t=g('lk');t.select();const ok=()=>toast('ලින්ක් එක copy කළා');try{navigator.clipboard.writeText(t.value).then(ok).catch(()=>{document.execCommand('copy');ok()})}catch(e){document.execCommand('copy');ok()}}
+function exportData(){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(S)],{type:'application/json'}));a.download='trip-backup.json';a.click()}
+function importData(f){const r=new FileReader();r.onload=()=>{try{const o=JSON.parse(r.result);if(!o.members||!o.exp)throw 0;S=o;S.veh=S.veh||{owner:'',km:0,rate:0};S.mode=S.mode||(S.hire>0?'hire':'own');save().then(()=>toast('Backup ඇතුළත් කළා'))}catch(e){toast('වැරදි ෆයිල් එකක්')}};r.readAsText(f)}
+document.addEventListener('change',e=>{const t=e.target;if(t.classList.contains('fc')||t.classList.contains('wt')||t.id==='ft'){if(S.lock){toast('🔒 ට්‍රිප් එක වසා ඇත');render();return}if(t.id==='ft')S.fund.t=t.value;else if(t.classList.contains('fc'))S.fund.c[t.dataset.m]=Math.max(0,parseFloat(t.value)||0);else{const v=parseFloat(t.value);S.w[t.dataset.m]=isNaN(v)||v<0?1:v}save();return}if(e.target.id==='fp'&&e.target.files[0]){const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const k=Math.min(1,900/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*k;c.height=im.height*k;c.getContext('2d').drawImage(im,0,0,c.width,c.height);F.ph=c.toDataURL('image/jpeg',.6);g('pv').innerHTML='<img src="'+F.ph+'" style="max-width:100%;border-radius:12px;margin-bottom:10px">'};im.src=r.result};r.readAsDataURL(e.target.files[0])}if(e.target.id==='imp'&&e.target.files[0])importData(e.target.files[0])});
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-a]');if(!b)return;const d=b.dataset,a=d.a;
+  if(a==='tab'){tab=d.t;ss('tab',tab);render();scrollTo(0,0)}
+  else if(a==='login'){modal={t:'login'};render();const p=g('pw');if(p)p.focus()}
+  else if(a==='logout'){admin=false;ss('adm','');render()}
+  else if(a==='dologin')doLogin()
+  else if(a==='close'){modal=null;F={};render()}
+  else if(a==='add'&&S.lock){toast('🔒 ට්‍රිප් එක වසා ඇත')}
+  else if(a==='add'){if(!admin){modal={t:'login'};render();const p=g('pw');if(p)p.focus()}else if(!S.members.length){toast('මුලින් සාමාජිකයන් එකතු කරන්න');tab='cfg';ss('tab',tab);render()}else{F={};modal={t:'exp'};render()}}
+  else if(a==='edit'){F=JSON.parse(JSON.stringify(S.exp.find(x=>String(x.id)===d.id)));modal={t:'exp'};render()}
+  else if(a==='lock'){S.lock=!S.lock;save()}
+  else if(a==='bimg'){modal={t:'img',u:billImg()};render()}
+  else if(a==='rmph'){F.ph='';if(g('pv'))g('pv').innerHTML='';if(g('fp'))g('fp').value=''}
+  else if(a==='bkp'){const t=JSON.stringify(strip(S));(navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Backup එක copy වුණා. Notes එකක paste කර තියාගන්න')).catch(()=>prompt('මේක copy කරගන්න',t))}
+  else if(a==='rst'){const t=prompt('Backup එක paste කරන්න');if(t){try{const o=norm(JSON.parse(t));if(!o.members.length&&!o.exp.length)throw 0;const pw=S.pw;S=o;S.pw=pw;save().then(()=>toast('Restore වුණා'))}catch(e){toast('වැරදි Backup එකක්')}}}
+  else if(a==='lang'){LANG=d.l;try{localStorage.setItem('trip_lang',LANG)}catch(e){}render()}
+  else if(a==='rtrip'||a==='rall'){modal={t:'reset',k:a};render()}
+  else if(a==='resetok')doReset()
+  else if(a==='del'){modal={t:'del',id:d.id};render()}
+  else if(a==='delok'){S.exp=S.exp.filter(x=>String(x.id)!==d.id);save()}
+  else if(a==='saveexp')addExp()
+  else if(a==='cfg')setCfg()
+  else if(a==='mode'){readCfg();S.mode=d.m;save()}
+  else if(a==='addm')addMember()
+  else if(a==='delm')delMember(d.m)
+  else if(a==='share')share()
+  else if(a==='syopen'){modal={t:'sync'};render()}
+  else if(a==='syconnect')connectSync()
+  else if(a==='syoff'){SY=null;try{localStorage.removeItem(SKEY)}catch(e){}if(es)es.close();es=null;toast('Sync නවත්වලා');render()}
+  else if(a==='copy')copyLink()
+  else if(a==='ph'){modal={t:'ph',id:d.id};render()}
+  else if(a==='done'){S.done[d.k]=!S.done[d.k];save()}
+  else if(a==='export')exportData()
+  else if(a==='import')g('imp').click()
+});
+function expRow(e){const n=S.members.length;return `<div class="row"><div class="ic">${ICON[e.cat]||'🧾'}</div><div class="gr"><b>${esc(e.desc||e.cat)}</b><div class="mut">${esc(e.cat)} · ${esc(e.by)} ගෙව්වා · ${e.sp.length===n?'හැමෝටම':esc(e.sp.join(', '))}</div></div><div class="am">${fmt(e.amt)}${e.ph?`<div><button class="s" data-a="ph" data-id="${e.id}">📎</button></div>`:''}${admin&&!S.lock&&!e.auto?`<div><button class="s" data-a="edit" data-id="${e.id}">✏️</button><button class="s" data-a="del" data-id="${e.id}">🗑️</button></div>`:''}</div></div>`}
+async function doReset(){const p=g('rp').value;let ok=false;try{ok=SY?(await H(p+':'+SY.i))===SY.k:(await H(p))===S.pw}catch(e){}if(!ok){toast('මුරපදය වැරදියි');return}const k=modal.k;modal=null;const fresh=()=>({pw:'',trip:{name:'',dates:''},hire:0,members:[],exp:[],veh:{owner:'',km:0,rate:0},mode:'hire',done:{},fund:{t:'',c:{}},w:{},lock:false});if(k==='rall'){try{localStorage.removeItem(KEY);localStorage.removeItem(SKEY)}catch(e){}if(es)es.close();es=null;SY=null;S=fresh();admin=false;ss('adm','');tab='home';ss('tab',tab);render();toast('Reset කළා')}else{const pw=S.pw;S=fresh();S.pw=pw;tab='home';ss('tab',tab);await save();toast('Trip එක මැකුවා')}}
+function personText(m,c){const b=c.bal[m],mine=c.pay.filter(p=>p[0]===m||p[1]===m).map(p=>p[0]===m?'➡️ '+p[1]+' ට දෙන්න: '+fmt(p[2]):'⬅️ '+p[0]+' ගෙන් ගන්න: '+fmt(p[2])).join('\n');return (S.trip.name||'Trip Split')+'\n👤 '+m+'\nගෙව්වා: '+fmt(c.paid[m])+'\nඔබේ කොටස: '+fmt(c.owed[m])+'\n'+(b>0?'ගන්න ඕන: ':b<0?'දෙන්න ඕන: ':'ශේෂය: ')+fmt(Math.abs(b))+(mine?'\n'+mine:'')+'\n— Rajitha Gaspe'}
+function myCard(){const c=calc();return `<div class="card"><h2>👤 එක් එක් අයගේ සාරාංශය</h2>${S.members.length?S.members.map(m=>{const b=c.bal[m];return `<div class="kv"><span><b>${esc(m)}</b><br><span class="mut">ගෙව්වා ${fmt(c.paid[m])} · කොටස ${fmt(c.owed[m])}</span></span><span><b class="${b>=0?'pos':'neg'}">${b>=0?'+':'−'}${fmt(Math.abs(b))}</b> <a class="chip" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(personText(m,c))}">📤</a></span></div>`}).join(''):'<div class="empty">සාමාජිකයන් නැත</div>'}</div>`}
+function billImg(){const c=calc(),tot=allExp().reduce((a,e)=>a+e.amt,0),L=[['s','මුළු වියදම: '+fmt(tot)],['h','👤 එක් එක් අය']];S.members.forEach(m=>L.push(['r',m+' · ගෙව්වා '+fmt(c.paid[m])+' · කොටස '+fmt(c.owed[m])]));L.push(['h','💰 කවුද කාට දෙන්නේ']);if(c.pay.length)c.pay.forEach(p=>L.push(['r',p[0]+' → '+p[1]+': '+fmt(p[2])]));else L.push(['r','ගෙවීමට කිසිවක් නැත']);const cv=document.createElement('canvas'),W=900,H=150+L.length*58+90;cv.width=W;cv.height=H;const x=cv.getContext('2d');x.fillStyle='#fff';x.fillRect(0,0,W,H);const gr=x.createLinearGradient(0,0,W,0);gr.addColorStop(0,'#0b2540');gr.addColorStop(1,'#0e7c66');x.fillStyle=gr;x.fillRect(0,0,W,110);x.fillStyle='#fff';x.font='bold 44px sans-serif';x.fillText(S.trip.name||'Trip Split',40,70);let y=170;L.forEach(l=>{x.fillStyle=l[0]==='h'?'#0e7c66':'#0b2540';x.font=(l[0]==='r'?'30px':'bold 34px')+' sans-serif';x.fillText(l[1],40,y);y+=58});x.fillStyle='#667';x.font='26px sans-serif';x.fillText('ඇප් නිර්මාණය: Rajitha Gaspe',40,H-30);return cv.toDataURL('image/png')}
+function expList(ex){if(!ex.length)return '<div class="empty">තවම වියදම් නැත</div>';const m={};ex.forEach(e=>{(m[e.dt||'—']=m[e.dt||'—']||[]).push(e)});return Object.keys(m).sort().reverse().map(d=>`<div class="mut" style="display:flex;justify-content:space-between;margin:12px 0 2px"><b>📅 ${d}</b><b>${fmt(m[d].reduce((a,e)=>a+e.amt,0))}</b></div>`+[...m[d]].reverse().map(expRow).join('')).join('')}
+function catCard(ex,tot){const m={};ex.forEach(e=>m[e.cat]=(m[e.cat]||0)+e.amt);const k=Object.keys(m).sort((a,b)=>m[b]-m[a]);return `<div class="card"><h2>📊 කාණ්ඩ අනුව වියදම්</h2>${k.length?k.map(c=>`<div style="margin:12px 0"><div class="kv" style="border:0;padding:0"><span>${ICON[c]||'🧾'} ${esc(c)}</span><b>${fmt(m[c])} <span class="mut">${Math.round(m[c]/tot*100)}%</span></b></div><div class="bar"><i style="width:${m[c]/tot*100}%"></i></div></div>`).join(''):'<div class="empty">තවම වියදම් නැත</div>'}</div>`}
+function vehCard(){
+  const adv=sum(CATS[2]),rest=sum(CATS[3]),fuel=sum(CATS[1]),due=S.hire-adv-rest-fuel,pct=S.hire>0?Math.min(100,(adv+rest+fuel)/S.hire*100):0;
+  return `<div class="card"><h2>🚗 වාහනය · Vehicle</h2>
+  ${S.mode==='hire'?`<div class="kv"><span>කුලියේ මුළු ගාණ</span><b>${fmt(S.hire)}</b></div><div class="bar"><i style="width:${pct}%"></i></div>
+  <div class="kv"><span>අත්තිකාරම් ගෙව්වා</span><b>${fmt(adv)}</b></div><div class="kv"><span>ඉතිරිය ගෙව්වා</span><b>${fmt(rest)}</b></div>
+  <div class="kv"><span>⛽ ඉන්ධන (බස් ගාණෙන් අඩු)</span><b>- ${fmt(fuel)}</b></div>
+  <div class="kv"><span>තවම ගෙවිය යුතු</span><span class="pill ${due>0?'neg':'pos'}">${fmt(due)}</span></div>`:'<div class="mut">🚗 තමන්ගේ වාහනය · Own vehicle</div>'}
+  <div class="kv"><span>⛽ ඉන්ධන (තෙල්)</span><b>${fmt(sum(CATS[1]))}</b></div>
+  <div class="kv"><span>🥘 රියදුරුගේ කෑම</span><b>${fmt(sum(CATS[4]))}</b></div>
+  <div class="kv"><span>🛣️ අධිවේගී / පාකිං (වෙනම ගෙවනවා)</span><b>${fmt(sum(CATS[7]))}</b></div>
+  ${vehCost()>0?`<div class="kv"><span>කිමී ගාණ (${S.veh.km} කිමී × ${fmt(S.veh.rate)})</span><b>${fmt(vehCost())}</b></div><div class="kv"><span>වාහන අයිතිකරු</span><b>${esc(S.veh.owner||'—')}</b></div>`:''}</div>`
+}
+function modalHtml(){
+  if(!modal)return '';
+  let c='';
+  if(modal.t==='login')c=`<h3>🔒 ${(S.pw||SY)?'Admin ඇතුල් වන්න':'Admin මුරපදයක් සාදන්න'}</h3><label class="l">මුරපදය</label><input id="pw" type="password" autocomplete="off"><div class="mut" style="margin-bottom:12px">${(S.pw||SY)?'':'මුලින්ම ඇතුල් වෙද්දී අලුත් මුරපදයක් සෑදෙනවා.'}</div><button class="btn w" data-a="dologin">ඉදිරියට</button><button class="btn g w" style="margin-top:8px" data-a="close">අවලංගු</button>`;
+  else if(modal.t==='share')c=`<h3>👁️ බලන ලින්ක් එක</h3><div class="mut" style="margin-bottom:8px">${modal.live?'Live ලින්ක් එක: ඔයා වෙනස් කරන දේවල් යාළුවන්ගේ ෆෝන් එකේ ඉබේම update වෙනවා. එයාලට බලන්න විතරයි පුළුවන්.':'මේ ලින්ක් එක යාළුවන්ට යවන්න. එයාලට බලන්න විතරයි පුළුවන්. දත්ත වෙනස් කළාම අලුත් ලින්ක් එකක් හදලා යවන්න.'}</div><textarea id="lk" readonly rows="5" style="width:100%;background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:10px;padding:8px;font-size:12px">${esc(modal.u)}</textarea><button class="btn w" style="margin-top:10px" data-a="copy">📋 Copy කරන්න</button><a class="btn g wa" href="https://wa.me/?text=${encodeURIComponent(modal.u)}" target="_blank" rel="noopener">WhatsApp එකට යවන්න</a><button class="btn g w" style="margin-top:8px" data-a="close">වසන්න</button>`;
+  else if(modal.t==='sync')c=`<h3>☁️ Live Sync සම්බන්ධ කරන්න</h3><label class="l">Firebase Database URL</label><input id="su" placeholder="https://xxxx-default-rtdb.firebasedatabase.app"><label class="l">Trip code (අලුත් trip එකක් නම් හිස්ව තියන්න)</label><input id="si" autocapitalize="none"><label class="l">Admin මුරපදය</label><input id="spw" type="password"><div class="mut" style="margin-bottom:12px">අලුත් trip එකක් නම් දැන් තියෙන දත්ත උඩුගත වෙනවා. තියෙන trip එකකට සම්බන්ධ වුණොත් මේ ෆෝන් එකේ දත්ත ඒකෙන් ප්‍රතිස්ථාපනය වෙනවා.</div><button class="btn w" data-a="syconnect">සම්බන්ධ කරන්න</button><button class="btn g w" style="margin-top:8px" data-a="close">අවලංගු</button>`;
+  else if(modal.t==='img')c=`<h3>🖼️ බිල image එක</h3><img src="${modal.u}" style="width:100%;border-radius:12px"><div class="mut" style="margin:8px 0">image එක දිගු වේලාවක් ඔබලා Save කරන්න</div><button class="btn g w" data-a="close">වසන්න</button>`
+  else if(modal.t==='reset')c=`<h3>⚠️ ${modal.k==='rall'?'සම්පූර්ණ Reset':'Trip එක මකන්න'}</h3><div class="mut" style="margin-bottom:10px">${modal.k==='rall'?'සියලු දත්ත, මුරපදය සහ sync සැකසුම් මැකෙනවා.':'මේ trip එකේ සියලු දත්ත මැකෙනවා (මුරපදය රැඳේ).'} ආපහු ගන්න බෑ.</div><label class="l">Admin මුරපදය</label><input id="rp" type="password"><button class="btn w" data-a="resetok">මකන්න</button><button class="btn g w" style="margin-top:8px" data-a="close">අවලංගු</button>`
+  else if(modal.t==='ph'){const x=S.exp.find(q=>String(q.id)===String(modal.id));c=`<h3>🧾 ${esc(x?x.desc||x.cat:'')}</h3><img src="${x?x.ph:''}" style="width:100%;border-radius:12px"><button class="btn g w" style="margin-top:10px" data-a="close">වසන්න</button>`}
+  else if(modal.t==='del')c=`<h3>වියදම මකන්නද?</h3><div class="mut" style="margin-bottom:14px">මකපු දේ ආපහු ගන්න බෑ.</div><button class="btn w" style="background:var(--bad)" data-a="delok" data-id="${modal.id}">මකන්න</button><button class="btn g w" style="margin-top:8px" data-a="close">අවලංගු</button>`;
+  else c=`<h3>${F.id?'✏️ වියදම edit කරන්න':'➕ අලුත් වියදමක්'}</h3>
+  <label class="l">දිනය</label><input id="fdt" type="date" value="${F.dt||TODAY()}"><label class="l">කාණ්ඩය</label><select id="fc">${CATS.map(x=>`<option ${F.cat===x?'selected':''}>${x}</option>`).join('')}</select>
+  <label class="l">විස්තරය</label><input id="fd" value="${esc(F.desc||'')}" placeholder="උදා: දවල් කෑම">
+  <label class="l">මුදල (රු.)</label><input id="fa" type="number" inputmode="decimal" value="${F.amt||''}">
+  <label class="l">කවුද ගෙව්වේ</label><select id="fb"><option value="">තෝරන්න</option>${S.members.map(m=>`<option ${F.by===m?'selected':''}>${esc(m)}</option>`).join('')}${S.fund.t?`<option ${F.by===FUND?'selected':''}>${FUND}</option>`:''}</select>
+  <label class="l">කාටද බෙදෙන්නේ</label><div style="margin-bottom:14px">${S.members.map(m=>`<label class="chk"><input type="checkbox" class="spc" value="${esc(m)}" ${(F.sp?F.sp.includes(m):true)?'checked':''}>${esc(m)}</label>`).join('')}</div>
+  <label class="l">බිල්පතේ ෆොටෝ (අවශ්‍ය නම්)</label><input id="fp" type="file" accept="image/*"><div id="pv">${F.ph?`<img src="${F.ph}" style="max-width:100%;border-radius:12px;margin-bottom:10px">`:''}</div><button class="btn g w" style="margin-bottom:10px" data-a="rmph">🗑️ ෆොටෝ ඉවත් කරන්න</button><button class="btn w" data-a="saveexp">${F.id?'යාවත්කාලීන කරන්න':'එකතු කරන්න'}</button><button class="btn g w" style="margin-top:8px" data-a="close">අවලංගු</button>`;
+  return `<div class="mb" data-a="close"><div class="sheet" data-a="noop">${c}</div></div>`
+}
+function menu(){
+  const I=[['tab','exp','📋','වියදම්|Expenses'],['tab','bill','💰','ගෙවීම්|Settle Up'],['tab','veh','🚗','වාහනය|Vehicle'],['tab','sum','📊','සාරාංශය|Summary'],['share','','🔗','ලින්ක් එක|Share']];
+  if(!VIEW){I.unshift(['add','','🧾','අලුත් වියදම|Add Expense']);I.push(['tab','cfg','⚙️','සැකසුම්|Settings'])}
+  return `<div class="menu">${I.map(t=>`<button class="tl" data-a="${t[0]}" data-t="${t[1]}"><span class="e">${t[2]}</span>${t[3].split('|')[0]}<small>${t[3].split('|')[1]||''}</small></button>`).join('')}</div>`
+}
+function render(){
+  const{paid,owed,bal,pay}=calc(),n=S.members.length,ex=allExp(),tot=ex.reduce((a,e)=>a+e.amt,0);
+  let m='';
+  if(tab==='home'){
+    m=menu()+`<div class="grid" style="margin-top:12px"><div class="tile hero"><div class="l">මුළු වියදම</div><div class="v" style="font-size:28px">${fmt(tot)}</div></div>
+    <div class="tile"><div class="l">එක් අයෙකුට</div><div class="v">${n?fmt(tot/n):'—'}</div></div>
+    <div class="tile"><div class="l">සාමාජිකයන්</div><div class="v">${n}</div></div></div>
+    ${vehCard()}
+    <div class="card"><h2>අලුත්ම වියදම්</h2>${ex.length?[...ex].reverse().slice(0,5).map(expRow).join(''):'<div class="empty">තවම වියදම් නැත</div>'}</div>`;
+  }else if(tab==='exp'){
+    m=`<div class="card"><h2>🧾 සියලු වියදම් <span class="mut">${ex.length}</span></h2>${expList(ex)}</div>`;
+  }else if(tab==='sum'){m=catCard(ex,tot)+myCard()+`<div class="card"><button class="btn w" data-a="bimg">🖼️ බිල image එකක් හදන්න</button></div>`}else if(tab==='veh'){
+    m=vehCard();
+  }else if(tab==='bill'){
+    const txt=encodeURIComponent((S.trip.name||'Trip Split · ට්‍රිප් බෙදුම')+'\nමුළු: '+fmt(tot)+'\n'+pay.map(p=>p[0]+' → '+p[1]+': '+fmt(p[2])).join('\n'));
+    m=`<div class="card"><h2>💰 කවුද කාට දෙන්නේ · Who pays whom</h2>${pay.length?pay.map(p=>{const k=p[0]+'|'+p[1]+'|'+p[2],d=S.done[k];return `<div class="pay" style="${d?'opacity:.55':''}"><span><b>${esc(p[0])}</b> → <b>${esc(p[1])}</b></span><b class="n">${fmt(p[2])}</b>${admin?`<button class="s" data-a="done" data-k="${esc(k)}">${d?'✅':'⬜'}</button>`:d?'✅':''}</div>`}).join('')+`<a class="btn g wa" href="https://wa.me/?text=${txt}" target="_blank" rel="noopener">WhatsApp එකට යවන්න</a>`:`<div class="empty">${n?'ගෙවීමට කිසිවක් නැත':'සාමාජිකයන් ඇතුළත් කළාම ගෙවීම් පෙනේ'}</div>`}</div>
+    <div class="card"><h2>👥 ශේෂය · Balances</h2>${S.members.map(x=>`<div class="row"><div class="av">${esc(x.slice(0,1))}</div><div class="gr"><b>${esc(x)}</b><div class="mut">ගෙව්වා ${fmt(paid[x])} · වැටෙන්නේ ${fmt(owed[x])}</div></div><span class="pill ${bal[x]>=0?'pos':'neg'}">${bal[x]>=0?'+':'–'}${fmt(Math.abs(bal[x]))}</span></div>`).join('')||'<div class="empty">සාමාජිකයන් නැත</div>'}</div>`;
+  }else{
+    if(!admin)m=`<div class="card"><div class="empty">🔒 සැකසුම් වෙනස් කළ හැක්කේ admin ට පමණයි.<br><br><button class="btn" data-a="login">Admin ඇතුල් වන්න</button></div></div>`;
+    else m=`<div class="card"><h2>⚙️ ට්‍රිප් සැකසුම්</h2>
+    <label class="l">ට්‍රිප් නම</label><input id="tn" value="${esc(S.trip.name)}">
+    <label class="l">දවස්</label><input id="td" value="${esc(S.trip.dates)}" placeholder="උදා: නොවැ 14–16">
+    <label class="l">වාහන වර්ගය · Vehicle</label>
+    <div class="seg"><button class="${S.mode==='hire'?'on':''}" data-a="mode" data-m="hire">🚐 කුලී වාහනය<small>Hired vehicle</small></button><button class="${S.mode==='own'?'on':''}" data-a="mode" data-m="own">🚗 තමන්ගේ වාහනය<small>Own vehicle</small></button></div>
+    ${S.mode==='hire'?`<label class="l">කුලියේ මුළු ගාණ · Total hire charge (රු.)</label><input id="hh" type="number" inputmode="decimal" value="${S.hire||''}">`:`<label class="l">වාහන අයිතිකරු · Vehicle owner</label><select id="vo"><option value="">නැත · None</option>${S.members.map(x=>`<option ${S.veh.owner===x?'selected':''}>${esc(x)}</option>`).join('')}</select>
+    <label class="l">මුළු කිලෝමීටර් · Total km</label><input id="vk" type="number" inputmode="decimal" value="${S.veh.km||''}">
+    <label class="l">කිමී එකකට ගාණ · Rate per km (රු.)</label><input id="vr" type="number" inputmode="decimal" value="${S.veh.rate||''}">`}
+    <button class="btn w" data-a="cfg">සුරකින්න</button></div>
+    <div class="card"><h2>👥 සාමාජිකයන්</h2>${S.members.map(x=>`<div class="row"><div class="av">${esc(x.slice(0,1))}</div><div class="gr"><b>${esc(x)}</b></div><button class="s" data-a="delm" data-m="${esc(x)}">🗑️</button></div>`).join('')}
+    <div style="display:flex;gap:8px;margin-top:10px"><input id="nm" placeholder="නම" style="margin:0"><button class="btn" data-a="addm">එකතු</button></div></div>
+    <div class="card"><h2>💰 පොදු අරමුදල</h2><div class="mut" style="margin-bottom:6px">හැමෝම මුලින් දාන සල්ලි. අත්තිකාරම්, ඉන්ධන මේකෙන් ගෙවන්න ("කවුද ගෙව්වේ" = පොදු අරමුදල).</div><label class="l">භාරකරු (සල්ලි තියෙන කෙනා)</label><select id="ft"><option value="">තෝරන්න</option>${S.members.map(m=>`<option ${S.fund.t===m?'selected':''}>${esc(m)}</option>`).join('')}</select>${S.members.map(m=>`<div class="kv"><span>${esc(m)}</span><input class="fc" data-m="${esc(m)}" type="number" inputmode="decimal" style="width:110px" value="${S.fund.c[m]||''}"></div>`).join('')}<div class="mut" style="margin-top:6px">${(()=>{const tc=S.members.reduce((a,m)=>a+(+S.fund.c[m]||0),0),fe=S.exp.filter(e=>e.by===FUND).reduce((a,e)=>a+e.amt,0);return (tc+fe>0&&!S.fund.t?'⚠️ භාරකරු තෝරන්න · ':'')+'එකතුව '+fmt(tc)+' · වියදම් '+fmt(fe)+' · ඉතිරිය '+fmt(tc-fe)})()}</div></div>
+    <div class="card"><h2>⚖️ කොටස් අනුපාතය</h2><div class="mut" style="margin-bottom:6px">1 = සම්පූර්ණ, 0.5 = අඩක් (ළමයි), 0 = කොටසක් නැත</div>${S.members.map(m=>`<div class="kv"><span>${esc(m)}</span><input class="wt" data-m="${esc(m)}" type="number" inputmode="decimal" step="0.5" min="0" style="width:90px" value="${S.w[m]===undefined?1:S.w[m]}"></div>`).join('')}</div>
+    <div class="card"><h2>🌐 භාෂාව · Language</h2><div class="seg"><button class="${LANG==='si'?'on':''}" data-a="lang" data-l="si">සිංහල</button><button class="${LANG==='en'?'on':''}" data-a="lang" data-l="en">English</button></div></div>
+    <div class="card"><h2>💾 Backup</h2><div style="display:flex;gap:8px"><button class="btn g w" data-a="bkp">📋 Copy</button><button class="btn g w" data-a="rst">⬆️ Restore</button></div></div>
+    <div class="card dz"><h2>⚠️ අවදානම් කලාපය</h2><button class="btn g w" style="margin-bottom:8px" data-a="lock">${S.lock?'🔓 ආපහු විවෘත කරන්න':'🔒 ට්‍රිප් එක වසන්න'}</button><button class="btn g w" data-a="rtrip">🗑️ Trip එක මකන්න</button><button class="btn g w" style="margin-top:8px" data-a="rall">♻️ සම්පූර්ණ Reset</button></div>
+    <div class="card"><h2>☁️ Live Sync</h2>${SY?`<div class="mut">සම්බන්ධයි ✅ · Trip code: <b>${esc(SY.i)}</b></div><button class="btn w" style="margin-top:8px" data-a="share">👁️ Live ලින්ක් එක</button><button class="btn g w" style="margin-top:8px" data-a="syoff">Sync නවත්වන්න</button>`:`<div class="mut" style="margin-bottom:8px">හැමෝගේම ෆෝන් එකේ එකවර update වෙන්න Firebase database එකක් සම්බන්ධ කරන්න.</div><button class="btn w" data-a="syopen">☁️ සම්බන්ධ කරන්න · Connect</button>`}</div>
+    <div class="card"><h2>📤 බෙදාගැනීම</h2><button class="btn w" data-a="share">👁️ යාළුවන්ට බලන ලින්ක් එක හදන්න</button></div>
+    <button class="btn g w" data-a="logout">Admin ඉවත් වන්න</button>`;
+  }
+  const T=[['home','🏠','මුල|Home'],['exp','🧾','වියදම්|Expenses'],['bill','💰','ගෙවීම්|Settle Up'],['cfg','⚙️','සැකසුම්|Settings']].filter(t=>!(VIEW&&t[0]==='cfg'));
+  g('app').innerHTML=`<header><div class="hw"><div><h1>${esc(S.trip.name||'Trip Split · ට්‍රිප් බෙදුම')}</h1><div class="sub">${esc(S.trip.dates||'ට්‍රිප් වියදම් කළමනාකරණය')}</div></div>
+  ${VIEW?'<span class="chip">👁️ බැලීමට පමණයි</span>':admin?'<button class="chip" data-a="logout">🔓 Admin</button>':'<button class="chip" data-a="login">🔒 Admin</button>'}</div></header>
+  <main><div class="brand"><small>ඇප් නිර්මාණය · App created by</small><b>Rajitha Gaspe</b></div>${S.lock?'<div class="chip" style="display:block;text-align:center;margin-bottom:12px">🔒 ට්‍රිප් එක වසා ඇත · වෙනස් කළ නොහැක</div>':''}${m}</main>
+  ${admin&&!S.lock&&(tab==='home'||tab==='exp')&&n?'<button class="fab" data-a="add" aria-label="වියදමක් එකතු කරන්න">+</button>':''}
+  <nav><div class="in">${T.map(t=>`<button class="${tab===t[0]?'on':''}" data-a="tab" data-t="${t[0]}"><span>${t[1]}</span>${t[2].split('|')[0]}<small>${t[2].split('|')[1]}</small></button>`).join('')}</div></nav>
+  ${modalHtml()}<div id="toast"></div>`;
+}
+(async()=>{const h=location.hash;
+  if(h.startsWith('#s=')){try{SY=JSON.parse(new TextDecoder().decode(unb64(h.slice(3))));VIEW=true;admin=false;if(tab==='cfg')tab='home';try{const r=await fetch(fb('/data'));const v=await r.json();if(typeof v==='string')S=norm(JSON.parse(v))}catch(e){}startSync()}catch(e){}}
+  else if(h.startsWith('#v')){try{S=await dec(h.slice(2));S.veh=S.veh||{owner:'',km:0,rate:0};S.mode=S.mode||(S.hire>0?'hire':'own');VIEW=true;admin=false;if(tab==='cfg')tab='home'}catch(e){}}
+  else if(SY)startSync();
+  render()})();
+const TX={"මුල": "Home", "වියදම්": "Expenses", "ගෙවීම්": "Settle Up", "සැකසුම්": "Settings", "සාරාංශය": "Summary", "වාහනය": "Vehicle", "ඇතුල් වන්න": "Log in", "සුරකින්න": "Save", "එකතු කරන්න": "Add", "එකතු": "Add", "වසන්න": "Close", "අවලංගු": "Cancel", "මකන්න": "Delete", "ඉදිරියට": "Continue", "ඉවත් වන්න": "Log out", "ලින්ක් එක": "Share", "යාවත්කාලීන කරන්න": "Update", "නම": "Name", "දිනය": "Date", "කාණ්ඩය": "Category", "විස්තරය": "Description", "තෝරන්න": "Select", "මුරපදය": "Password", "කවුද ගෙව්වේ": "Paid by", "කාටද බෙදෙන්නේ": "Split between", "සාමාජිකයන්": "Members", "ශේෂය": "Balance", "හැමෝටම": "Everyone"},TS=[["ඇප් නිර්මාණය · ", ""], [" · ට්‍රිප් බෙදුම", ""], ["ට්‍රිප් බෙදුම", "Trip Split"], ["ට්‍රිප් වියදම් කළමනාකරණය", "Trip expense manager"], ["ට්‍රිප් නම", "Trip name"], ["ට්‍රිප් සැකසුම්", "Trip settings"], ["කාණ්ඩ අනුව වියදම්", "Spending by category"], ["තවම වියදම් නැත", "No expenses yet"], ["ගෙවීමට කිසිවක් නැත", "Nothing to settle"], ["සාමාජිකයන් නැත", "No members"], ["කවුද කාට දෙන්නේ", "Who pays whom"], ["මුළු වියදම", "Total spent"], ["එක් අයෙකුට", "Per person"], ["අලුත්ම වියදම්", "Latest expenses"], ["සියලු වියදම්", "All expenses"], ["අලුත් වියදමක්", "New expense"], ["කුලියේ මුළු ගාණ", "Total hire charge"], ["අත්තිකාරම් ගෙව්වා", "Advance paid"], ["ඉතිරිය ගෙව්වා", "Balance paid"], ["ඉන්ධන (බස් ගාණෙන් අඩු)", "Fuel (deducted from hire)"], ["අධිවේගී / පාකිං (බස් ගාණෙන් අඩු)", "Highway / parking (deducted from hire)"], ["තවම ගෙවිය යුතු", "Still to pay"], ["බිල්පතේ ෆොටෝ (අවශ්‍ය නම්)", "Receipt photo (optional)"], ["කෑම බීම", "Food & drink"], ["කුලිය - අත්තිකාරම", "Hire - advance"], ["කුලිය - ඉතිරිය", "Hire - balance"], ["රියදුරු කෑම", "Driver meals"], ["අධිවේගී / පාකිං", "Highway / parking"], ["නවාතැන්", "Accommodation"], ["ටිකට්", "Tickets"], ["වෙනත්", "Other"], ["ඉන්ධන", "Fuel"], ["රු.", "Rs."]].sort((a,b)=>b[0].length-a[0].length);
+function tr(){document.body.classList.toggle('en',LANG==='en');if(LANG!=='en')return;const w=document.createTreeWalker(g('app'),NodeFilter.SHOW_TEXT),ns=[];while(w.nextNode())ns.push(w.currentNode);ns.forEach(n=>{if(n.parentNode.tagName==='OPTION')return;let t=n.nodeValue;const k=t.trim();if(TX[k]){n.nodeValue=t.replace(k,TX[k]);return}for(const[a,b]of TS)if(t.includes(a))t=t.split(a).join(b);n.nodeValue=t})}
+const _r=render;render=function(){_r();tr()};tr();
+</script></body></html>
